@@ -6,7 +6,7 @@ namespace Tyuiu.BredihinII.Sprint2.Task7.V8.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            return x >= -2 && x <= 2 && y >= (x * x) && y <= 4;
+            return y >= (y * y) && x <= 4;
         }
     }
 }
