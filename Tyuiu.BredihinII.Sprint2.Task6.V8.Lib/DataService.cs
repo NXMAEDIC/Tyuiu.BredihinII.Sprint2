@@ -10,7 +10,7 @@ namespace Tyuiu.BredihinII.Sprint2.Task6.V8.Lib
 
             if (m > 1)
             {
-                return $"{m:D2}.{n:D2}";
+                return $"{m:D2}.{n - 1:D2}";
             }
 
             int previousMonth = (n == 1) ? 12 : n - 1;
