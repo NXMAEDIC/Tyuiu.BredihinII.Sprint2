@@ -10,13 +10,13 @@ namespace Tyuiu.BredihinII.Sprint2.Task6.V8.Lib
 
             if (m > 1)
             {
-                return $"{n} месяц, {m - 1} число";
+                return $"{m:D2}.{n:D2}";
             }
 
             int previousMonth = (n == 1) ? 12 : n - 1;
             int previousDay = daysInMonth[previousMonth - 1];
 
-            return $"{previousMonth} месяц, {previousDay} число";
+            return $"{previousDay:D2}.{previousMonth:D2}";
         }
     }
 }
