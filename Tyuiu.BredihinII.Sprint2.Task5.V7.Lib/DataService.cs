@@ -6,27 +6,35 @@ namespace Tyuiu.BredihinII.Sprint2.Task5.V7.Lib
     {
         public string FindMonthName(int startYear, int n)
         {
-            startYear = 1990;
-            int monthNumber = (n + 2) % 12;
-            if (monthNumber == 0)
+            int[] daysInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+            int monthIndex = (n ) % 12;
+            int monthsPassed = (n ) / 12;
+
+            int currentMonthDays = daysInMonth[monthIndex];
+
+            int dayOfMonth = 1 + 2;
+
+            if (dayOfMonth > currentMonthDays)
             {
-                monthNumber = 12;
+                dayOfMonth -= currentMonthDays;
+                monthIndex = (monthIndex + 1) % 12;
             }
 
-            string monthName = monthNumber switch
+            string monthName = monthIndex switch
             {
-                1 => "Январь",
-                2 => "Февраль",
-                3 => "Март",
-                4 => "Апрель",
-                5 => "Май",
-                6 => "Июнь",
-                7 => "Июль",
-                8 => "Август",
-                9 => "Сентябрь",
-                10 => "Октябрь",
-                11 => "Ноябрь",
-                12 => "Декабрь",
+                0 => "Январь",
+                1 => "Февраль",
+                2 => "Март",
+                3 => "Апрель",
+                4 => "Май",
+                5 => "Июнь",
+                6 => "Июль",
+                7 => "Август",
+                8 => "Сентябрь",
+                9 => "Октябрь",
+                10 => "Ноябрь",
+                11 => "Декабрь",
                 _ => "Неизвестный месяц"
             };
 
