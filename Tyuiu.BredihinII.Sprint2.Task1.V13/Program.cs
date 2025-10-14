@@ -1,4 +1,4 @@
-﻿using Tyuiu.BredihinII.Sprint2.Task0.V11.Lib;
+﻿using Tyuiu.BredihinII.Sprint2.Task1.V13.Lib;
 
 namespace ConsoleApp
 {
@@ -8,10 +8,12 @@ namespace ConsoleApp
         {
             DataService ds = new DataService();
 
-            int x = 8105;
-            int y = 275;
+            int a = 145;
+            int b = 916;
+            int c = 164;
+            int d = 137;
 
-            var result = ds.GetCompareOperations(x, y);
+            var result = ds.GetLogicOperations(a, b, c, d);
 
             Console.WriteLine("Результат:");
             foreach (var item in result)
