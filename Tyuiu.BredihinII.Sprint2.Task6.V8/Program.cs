@@ -6,10 +6,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите номер месяца: ");
+            Console.Write("Введите номер месяца:");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Введите число месяца: ");
+            Console.Write("Введите число месяца:");
             int m = Convert.ToInt32(Console.ReadLine());
 
             DataService ds = new DataService();
