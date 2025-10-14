@@ -8,12 +8,12 @@ namespace Tyuiu.BredihinII.Sprint2.Task0.V11.Lib
         {
             return new bool[]
             {
-                (x == y * 30),
-                (x != y * 30),
+                (x == y * 30 - 145),
+                (x != y * 30 - 145),
                 (x > y * 20),
-                (x < y * 100),
-                (x >= y * 25),
-                (x <= y * 100)
+                (x < y * 10),
+                (x >= y * 5),
+                (x <= y * 10)
             };
         }
     }
