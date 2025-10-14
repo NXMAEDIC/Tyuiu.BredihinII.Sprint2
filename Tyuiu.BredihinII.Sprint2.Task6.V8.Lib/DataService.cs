@@ -10,7 +10,7 @@ namespace Tyuiu.BredihinII.Sprint2.Task6.V8.Lib
 
             if (m > 1)
             {
-                n = n - 1;
+                m = m - 1;
                 return $"{m:D2}.{n:D2}";
             }
 
